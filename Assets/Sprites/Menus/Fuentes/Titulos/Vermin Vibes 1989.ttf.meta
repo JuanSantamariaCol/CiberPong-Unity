@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: eff9783a61ccd0d4b8379b2aad79fa25
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Vermin Vibes 1989
+  fontNames:
+  - Vermin Vibes 1989
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: d9060b622128fda419e3d1c5ad27a3f9, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
