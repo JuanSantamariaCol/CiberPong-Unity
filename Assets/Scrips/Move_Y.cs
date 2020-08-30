@@ -15,21 +15,6 @@ public class Move_Y : MonoBehaviour
     private float Posicion;
     public bool LimiteDe, LimiteIz = true;
 
-    //Prueba De Plataforma
-    public GameObject Bola;
-    public float PosX_Bola;
-
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-
-
-
-    }
-
 
 
     private void Update()
@@ -80,13 +65,6 @@ public class Move_Y : MonoBehaviour
             transform.Translate(Velocidad, 0, 0);
         }
         //FIN MOVIMIENTO 
-
-        /*PRUEBA
-        Vector2 Pos_bola = GetComponent<Transform>().position;
-        PosX_Bola = Pos_bola[1];
-        Debug.Log(PosX_Bola);
-        transform.position = new Vector3 (, PosX_Bola,0);
-       */
     }
 
 }

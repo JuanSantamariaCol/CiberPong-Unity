@@ -5,7 +5,7 @@ using UnityEngine;
 public class Limites : MonoBehaviour
 {
     // sonidos
-    AudioSource Sonido_Muerte;
+    AudioSource Sonido_Muerte;  //REVISAR NOMBRES QUE NO ESTEN IGUALES MIRAR EL DE ABAJO
     public AudioClip SonidoMuerte;
     public AudioClip SonidoRebote;
 
@@ -18,19 +18,13 @@ public class Limites : MonoBehaviour
         Sonido_Muerte = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnCollisionEnter2D(Collision2D collision )
     {
         if ((collision.gameObject.CompareTag("Pelota"))&& Administrador.P_BolaAse == false && Jugador_Vivo == true){
             Muerte();
         }
 
-        if (collision.gameObject.CompareTag("Pelota")&& Jugador_Vivo && Administrador.P_BolaAse == false){
+        if (collision.gameObject.CompareTag("Pelota")&& Jugador_Vivo && Administrador.P_BolaAse == false){ //Ordenar
             Muerte();
         }
 

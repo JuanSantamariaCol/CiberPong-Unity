@@ -14,10 +14,7 @@ public class ControladorMute : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
     public void Mute (string Activador)
     {
         if (ActivadoSonido == true && Activador == "Toque")

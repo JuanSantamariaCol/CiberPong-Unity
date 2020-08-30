@@ -14,13 +14,8 @@ public class AdmonLvL : MonoBehaviour
     public GameObject PoderMatadora;
     public GameObject PoderEscogido;
     public float T_RespawnBuff = 1;
-    public int RadioCirculo = 20;
+    public int RadioCirculo = 20; // Mejorar Esto Cambiar a Rectangulo
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    } 
 
     // Update is called once per frame
     void Update()
@@ -70,10 +65,10 @@ public class AdmonLvL : MonoBehaviour
             }
 
             var A_pointInCircle = Random.insideUnitCircle * RadioCirculo;
-            Instantiate(PoderEscogido, A_pointInCircle, transform.rotation);
+            Instantiate(PoderEscogido, A_pointInCircle, transform.rotation); // Hacer una lista de Objetos para no instanciarlos (Consume Mucho)
 
             Activador = false;
-            return;
+            
 
         }
     }

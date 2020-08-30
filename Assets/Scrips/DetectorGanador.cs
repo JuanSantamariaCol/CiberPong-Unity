@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class DetectorGanador : MonoBehaviour
 {
     //Guardar Puntajes Y Numero de Rondas
-    public GameObject GuardadorPtsRounds;
-    public  Datos_Puntajes CentroDePuntos;  
+    public GameObject GuardadorPtsRounds; // INECESARIO
+    public  Datos_Puntajes CentroDePuntos;  // SE PUEDE MEJORAR AL HACERLO STATIC
     public bool SoloUnPunto = true;
 
 
@@ -28,8 +28,8 @@ public class DetectorGanador : MonoBehaviour
     public bool VidaJ2;
     public bool VidaJ3;
     public bool VidaJ4;
-    // Objetos que envian el estado del jugador 
-    public GameObject J1;
+    // Objetos que envian el estado del jugador Vivo o Muerto SE PUEDE MEJORAR CON UN Limites.limiteJ1 = True o false
+    public GameObject J1; //NO TIENE QUE SE UN GO
     public GameObject J2;
     public GameObject J3;
     public GameObject J4;
@@ -40,7 +40,7 @@ public class DetectorGanador : MonoBehaviour
     void Start()
     {
         //Buscar El Objeto De Puntajes 
-        GuardadorPtsRounds = GameObject.Find("Puntajes");
+        GuardadorPtsRounds = GameObject.Find("Puntajes"); // INECESARIO
         CentroDePuntos = GuardadorPtsRounds.GetComponent<Datos_Puntajes>();
         
     }
@@ -49,8 +49,8 @@ public class DetectorGanador : MonoBehaviour
     void Update()
     {
 
-        VidaJ1 = J1.gameObject.GetComponent<Limites>().Jugador_Vivo;
-        VidaJ2 = J2.gameObject.GetComponent<Limites>().Jugador_Vivo;
+        VidaJ1 = J1.gameObject.GetComponent<Limites>().Jugador_Vivo; //SE PUEDE MEJORAR CON UN SOLO SCRIP QUE TENGA LOS
+        VidaJ2 = J2.gameObject.GetComponent<Limites>().Jugador_Vivo; // DATOS DE TODOS LOS JUGADORES Y AL COLICIONAR SOLO CAMBIE UN DATO
         VidaJ3 = J3.gameObject.GetComponent<Limites>().Jugador_Vivo;
         VidaJ4 = J4.gameObject.GetComponent<Limites>().Jugador_Vivo;
 

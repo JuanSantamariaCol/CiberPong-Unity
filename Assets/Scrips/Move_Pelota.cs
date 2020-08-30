@@ -13,7 +13,7 @@ public class Move_Pelota : MonoBehaviour
     void Start()
     {
 
-        //para que la pelota salga a un lugar aleatorio 
+        //para que la pelota salga a una direccion aleatoria aleatorio 
         Num1 = Random.Range(-1, 1);
         Num2 = Random.Range(-1, 1);
         if (Num2 == 0)
@@ -30,11 +30,6 @@ public class Move_Pelota : MonoBehaviour
         Pelota.AddForce(new Vector3(-VelIni*Num2, VelIni*Num1));
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 
 
 }

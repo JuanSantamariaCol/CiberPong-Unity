@@ -13,7 +13,7 @@ public class Datos_Puntajes : MonoBehaviour
     [SerializeField] private string interstitialID = "";
     //
 
-    public GameObject DatosPuntos;
+    public GameObject DatosPuntos; // PARA NO DESTRUIR EL GAME OBJECT SE PUEDE MEJORAR CON THIS?
 
     public bool RondaTerminada = false;
     public bool Boton = false;

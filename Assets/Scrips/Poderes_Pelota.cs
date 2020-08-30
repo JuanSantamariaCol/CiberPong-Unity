@@ -13,7 +13,7 @@ public class Poderes_Pelota : MonoBehaviour
     private Animator animaciones;
 
     //Sonidos
-    AudioSource AudioPelota;
+    public AudioSource AudioPelota;  // se Puede Optimizar 
     public AudioClip Sonido_Rebote;
     public AudioClip Sonido_P_Ase;
     public AudioClip Sonido_P_Multi;
@@ -23,7 +23,7 @@ public class Poderes_Pelota : MonoBehaviour
     void Start()
     {
         BuscarAdmon = GameObject.Find("AdmonLvL");
-        Administrador = BuscarAdmon.GetComponent<AdmonLvL>();
+        Administrador = BuscarAdmon.GetComponent<AdmonLvL>(); // se puede optimizar poniendo a Admon un Static
         animaciones = GetComponent<Animator>();
         Pelota = GetComponent<Rigidbody2D>();
         AudioPelota = GetComponent<AudioSource>();

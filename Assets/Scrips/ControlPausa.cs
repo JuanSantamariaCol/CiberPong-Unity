@@ -30,11 +30,7 @@ public class ControlPausa : MonoBehaviour
         MenuPausa.SetActive(false);
         Time.timeScale = 1f;
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+
 
     // Update is called once per frame
     void Update()
@@ -45,7 +41,7 @@ public class ControlPausa : MonoBehaviour
             MenuActivo = (!MenuActivo);
             MenuPausa.SetActive(MenuActivo);
             Time.timeScale = (MenuActivo) ? 0 : 1f;  //explicacion aca lo que hacemos es que ponemos un valor booleano diciendo si menu activo es true entonces time sera 0 si es falso entonces time sera 1
-
+            //Optimizar lo de ariba
 
         }
     }
